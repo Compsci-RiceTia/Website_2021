@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- 124180 Project
+February 14 -->
+
+<html>
+<head> <title> Cheesy Cheese </title> 
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="img/png" href = "truelogo.png">
+</head>
+
+		<body>
+	<!-- nav bar -->
+			<ul class= "b">
+			<li class= "a"><a href="index.html"> 
+				Home</a> </li>
+			<li class= "a"><a href="form.html"> 
+				Order Form</a> </li>
+			<li class= "a"><a href= "question.html">
+				Q&A </a></li>
+			<li class= "a"><a href= "about.html">
+				About Us</a></li>				
+		</ul>
+
+	<br>
+	
+	<a href="index.html"> 
+	<img src= "truelogo.png" class= "logo">
+	</a>
+
+<!-- ideas of what you're buying-->
+		<h1> CHEESE </h1>
+			<h3> (How exciting!) </h3>
+			<div id= "center">
+				<div class= "image">
+					<img class= "image_img" src= "meat.jpg">
+					<!--animation as well -->
+					<div class= "overlay">
+						<div class = "text"> Lots of meat options 
+						</div>
+					</div>
+				</div>
+				<div class= "image">
+					<img class= "image_img" src= "jam.jpg">
+					<div class= "overlay">
+						<div class = "text"> Pair your cheese board with jam
+						</div>
+					</div>
+				</div>
+				<div class= "image">
+					<img class= "image_img" src= "sauce.jpg">
+					<div class= "overlay">
+						<div class = "text"> Try different types of cheese 
+						</div>
+					</div>
+				</div>
+			</div>
+	<br>
+
+<!-- form stuff-->
+		<form method="POST" action="response.html">
+			<fieldset>
+				<legend> Information </legend>
+					<label for="email"><span>*required </span>Enter your email:</label>
+						<input type="email" id="email" name="email" value= "jdoe@co.com" required autofocus>
+	<br>
+	<br>
+				<label for="address"><span>*required </span>Enter Address</label>
+					<input type="text" id="adress" name="address" value= "306 First St." required><br><br>  
+
+				<label for="fruit"><span>*required </span>What cheese do you want?</label>
+	<br>
+					<input type="radio" id="fondue" name="cheese" value="fondue" required>
+						<label for="fondue">Fondue (3.99$) </label>
+	<br>
+					<input type="radio" id="brie" name="cheese" value="brie" checked>
+						<label for="brie">Brie (5.99$)</label>
+					
+					<input type="radio" id="cheddar" name="cheese" value="cheddar">
+						<label for="cheddar">Cheddar (3.50$)</label>
+	<br>
+	<br>
+					
+				<label for="option"><span>*required </span> Dietary </label>
+	<br>
+				<input type="radio" id="vegan" name="type" value="vegan" required>
+					<label for="vegan"> Vegan (28.99$) </label>
+	<br>
+				<input type="radio" id="vegetarian" name="type" value="vegetarian" checked>
+					<label for="vegetarian"> Vegetarian (27.99$)</label>
+				<input type="radio" id="meat" name="type" value="meat" checked>
+					<label for="meat"> Meat (25.99$)</label>
+					
+					
+			</fieldset>
+
+	<br>
+		<!--drop down menu -->
+		<label for="Amount">How many servings? (Dietary+Cheese for 5, 2$ for every extra)</label>
+			<select name="Amount" id="Amount" required>
+				<option value="5" selected>5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+			</select>
+	<br>
+	<br>
+		<!--text area-->
+		<label for= "requests"> Special Requests (optional)</label>
+	<br>
+		<textarea id="requests" name="requests" rows="4" cols="50" placeholder="Here you can explain request for delivery, any allergies, when you want the shipment, and anything else!"></textarea>
+	<br>
+	<br>
+		<!--checkboxes (not made required)-->
+		<label for="crackers">What crackers? (you can pick multiple!)</label>
+	<br>
+		<input type="checkbox" id="free" name="crackers" value="free" checked>
+			<label for="free">Wheat</label>
+	<br>
+		<input type="checkbox" id="free" name="crackers" value="free">
+			<label for="free">Club</label>
+	<br>
+	<br>
+		<input type="checkbox" id="free" name="cracker" value="free"
+			<label for="free">Vegetable</label>
+	<br>
+		<input type="reset" value="Reset">
+			<a href="response.html"><input type="submit"></a>
+		</form>
+	
+</body>
+</html>

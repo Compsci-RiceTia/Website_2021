@@ -1,0 +1,116 @@
+/* 124180 Project using divs, lists, images, and paragraphs to demonstrate knowlegde of HTML
+February 14
+style sheet */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans&display=swap');
+
+body {background-color: #f7d8f7; color: #450e46; font-family: 'Josefin Sans'}
+
+/*lots of general styling for all pages*/
+h1 {font-family: 'Dancing Script', cursive; font-size: 60px; text-align: center;}
+
+h3 {text-align: center;}
+
+p {font-size: 18pt;}
+
+/* styling for homepage */
+p.about {margin-left: 20%; text-align: center;}}
+
+p.right {text-align:right;}
+
+p.b {color:white}
+	
+img {width: 300px; height: 200px; margin: 10px;}
+
+img.a {float: left; border: solid 5px #811B82;}
+
+img.b {float: right; border: solid 5px #FB8423; height: 400px;}
+
+img.c {vertical-align: middle; height: 300px; width:500px;}
+
+img.logo {margin-left:40%}
+
+/* for image map */
+img.big {height: auto; width: auto; float:left;}
+
+/* nav bar */
+ul.b {list-style-type: none;margin: 0;padding: 0;overflow: hidden;background-color: #811B82;}
+
+ol {float:left;}
+
+/* right div on homepage */
+ol.c {color:white; font-size: 16pt;}
+
+form {text-align: center;}
+
+fieldset {width: 60%; margin-left: 220px; background-image: url(accent.png); color:white;}
+
+legend {font-size: 22pt; font-weight: bold; background-color: white; color: #811B82;}
+
+/* nav bar */	
+li.a {float: left;color: white;padding: 24px; background-color: #811B82;}
+		
+li.a a {display: block;color: white;text-align: center;padding: 14px 16px;text-decoration: none;}
+
+li.a:hover {background-color: #111;}
+
+/* for image animation on form */
+.image {position:relative; width: 300px; float:left; margin: 5px;}
+
+.image_img {display: block; width: 100%}
+
+.overlay {position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+background: #811B82; color: white; display: flex; flex-direction: common; align-items: center;
+justify-content: center; opacity: 0; transition: opacity 0.25s; margin-left: 10px;}
+
+.overlay > * {transform: translateY(20px); transition: transform 0.25s}
+
+.overlay:hover > * {transform: translateY(0)}
+
+.overlay:hover {opacity: 1;}
+
+.text {font-size: 14pt;}
+
+#nav {width: 100%}
+
+/* homepage */
+#container {width: 800px; height: 1200px; padding: 20px;}
+
+#whyus {width: 800px; height: 250px;}
+
+#selection {width: 800px; height: 410px; padding: 10px;}
+
+#right {height:1200px;width: 30%; float: right; text-align: center;
+ font-weight: bold; background-image: url('accent.png')}
+
+/* form page */
+#center {width: 1000px; height: 220px; padding: 10px; margin-left: 130px;}
+
+/* Q&A page */
+#review {height: 100%; width: 50%; border: #450e46 5px solid;box-sizing: border-box; float: left; padding: 15px;}
+
+#question {position: relative;height: 100%; width: 50%; border: #450e46 5px solid; float: right; padding: 15px;}
+
+#info {height: 400px; width: 1250px;}
+
+/* slideshow */
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+
+.slideshow-container {width: 530px; height: 550px; position: relative; margin: auto;}
+
+.active {
+  background-color: #717171;
+}
+
+
+
+
+
+
+
+
+
+
+
+ 

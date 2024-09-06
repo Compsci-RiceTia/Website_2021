@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- 124180 Project using divs, lists, images, and paragraphs to demonstrate knowlegde of HTML
+February 14
+Sources: w3schools.com and Dcode on Youtube 
+"Image Hover Text Overlay Effect with HTML & CSS - Web Design Tutorial"
+Images are free use
+URL: students.imsa.edu/~trice1 -->
+
+<html>
+<!-- name of company and what to recognize it by-->
+<head> <title> Cheesy Cheese </title> 
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="img/png" href = "truelogo.png">
+</head>
+
+
+<body>
+<!-- nav bar -->
+<div id= "nav">
+		<ul class= "b">
+			<li class= "a"><a href="index.html"> 
+				Home</a> </li>
+			<li class= "a"><a href="form.html"> 
+				Order Form</a> </li>
+			<li class= "a"><a href= "question.html">
+				Q&A </a></li>
+			<li class= "a"><a href= "about.html">
+				About Us</a></li>				
+		</ul>
+	</div>
+
+	<br>
+	<br>
+
+<!--logo-->
+	<a href="index.html"> 
+	<img src= "truelogo.png" class= "logo">
+	</a>
+	
+<!--divs to organize info about company-->
+		<h1> Welcome to Cheesy Cheese! </h1>
+			<div id= "right">
+				<p class= "b"> 
+				things to think about <br> when ordering
+				</p>
+				
+				<ol class= "c">
+					<li> delivery 
+						<ul> 
+							<li> weather </li>
+							<li> time </li>
+						</ul>
+					</li>
+	<br>
+					<li> All purchases are expected <br> to financed in cash </li>
+	<br>
+					<li> Sales are final </li>
+	<br>
+					<li> All large purchases must be done a week in advance </li>
+					
+	<br>
+					<li> Rush charges are applicable </li>
+	<br>
+					<li> Contact must be made for changes in order 
+						<ul>
+							<li> not all changes can be made and must be 3 hrs in advance </li>
+						</ul>
+					</li>
+	<br>
+					<li> Send complaints to jimjoe@ong.com </li>
+				</ol>
+			</div>
+	
+		<div id= "container">
+
+			<div id= "whyus">
+				<img class= "a" src= "cheese.jpg">
+				<ol class= "b">
+				<h2> Why us! </h2>
+					<li> Variety
+						<ul>
+							<li> Vegan options </li>
+							<li> Dietary Restrictions</li>
+							<li> Alergies </li>
+							</li>
+						</ul>
+						<li> Organic </li>
+				</ol>
+			</div>
+	<br>
+			<div id= "selection">
+				<img class= "b" src= "fruit.jpg">
+				<p class= "right"> 
+						Select from our advanced cheese, berry, crackers, and
+						many other selections to choose the best cheese plate for you!
+						Specifics are laid out on our order page!
+				</p>
+			</div>
+	<br>
+	<br>
+	<br>
+<!-- slide show -->
+		<div class="slideshow-container">
+
+			<div class="mySlides">
+			<img src="basket.jpg" class= "c">
+			</div>
+
+			<div class="mySlides">
+				<img src="fruits.png" class= "c">
+			</div>
+
+			<div>
+					<span class="dot"></span> 
+					<span class="dot"></span>
+				</div>
+				
+			<p> All of our fruit and vegetables for our cheese plates are
+					locally sourced. This ensures only the best fruits that are
+					in season are selected. Here from our happy customer Julia.
+	<br>
+					<br> <em> 4.5/5 Such a great small bussiness to support. The food is
+					delicious. </em>
+			</p>
+		</div>
+		
+	<br>
+<h6> This site is a student project and is not for commerical use. Any plagirism is not of malice. </h6>
+	<br>
+		
+<!-- animation for slideshow -->
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); //
+}
+</script>
+
+ </body>
+ </html>
